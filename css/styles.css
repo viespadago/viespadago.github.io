@@ -1,0 +1,163 @@
+<! –– empieza la hoja de estilos con estilos generales ––>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: normal 18px sans-serif;
+    color: #333;
+    background-color: lightgray;
+}
+<! –– estilos generales del formulario ––>
+.regForm {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+.regForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+<! –– estilos de la cabecera del formulario ––>
+.regForm .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+.seperator {
+  width: 33%;
+  height: 1px;
+  color: grey;
+  background-color: grey; 
+  display: inline-block;
+}
+.left {
+  float: left;
+}
+.right {
+float: right;
+}
+.regForm .user {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+<! –– estilos de los campos del formulario ––>
+.regForm .user .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+.perfil {
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.regForm .user .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+.regForm .email {
+    width: 100%;
+}
+.regForm .name {
+    width: 100%;
+}
+.regForm #description {
+    width: 100%;
+}
+.regForm #pay-now {
+    width: 100%; 
+}
+.regForm .user .btn {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #696969;
+    color: lightgray;
+}
+.regForm .user .btn:hover{
+    background-color: gray;
+}
+.addbtn {
+    width: 30%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #696969;
+    color: lightgray;
+}
+.addbtn:hover{
+    background-color: gray;
+}
+.regForm .anosDexperiencia {
+    width: 50%;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.regForm #selector {
+    margin-top: 15px;
+}
+.regForm .skillist {
+    width: 100%;
+}
+.regForm .user .btn:active{
+    background-color: black;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+<! –– estilos que cambian para hacer la página responsive según la resolución ––>
+@media(max-width: 650px) {
+    .regForm .name {
+        width: 100%;
+    }
+    .regForm #country {
+        font-size: 90%;
+    }
+}
+@media(max-width: 500px) {
+    .regForm #country {
+        font-size: 75%;
+    }
+    .seperator {
+        width: 25%;
+  }
+    .addbtn {
+    font-size: 18px;
+    }
+}
+@media(max-width: 425px) { 
+    .regForm .heading h1 {
+    font-size: 150%;
+    }  
+    .regForm #country {
+        font-size: 60%;
+    }
+    .regForm #city {
+        font-size: 80%;
+    }
+    .regForm #selector {
+    margin-top: 0px;
+    }
+    .seperator {
+        width: 20%;
+    }
+    .addbtn {
+    font-size: 14px;
+    } 
+}
+@media(max-width: 360px) {
+    .creditCardForm #country {
+        font-size: 50%;
+    }
+    .addbtn {
+    font-size: 10px;
+    } 
+}

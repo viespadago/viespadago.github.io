@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario para MWC 22 Front-End Hackaton</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<! –– acaba la cabecera y empieza el cuerpo del formulario ––>
+<body>
+<div class="regForm">   
+      
+    <div>
+      <hr class="seperator left">
+      <hr class="seperator right">
+    </div>
+    <div id="perfil">
+    <div class="heading">
+       <h1>Formulario</h1>
+    </div>
+    <! –– inicio de los campos a rellenar ––>
+    <div class="user">
+        <form>
+            <div id="formulario2">
+            <div class="form-group email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Una dirección válida" class="form-control" id="email">
+            </div>
+            <div class="form-group name">
+                <label for="name">Nombre completo</label>
+                <input type="text" placeholder="Nombre y apellido(s)" class="form-control" id="name">
+            </div>
+            <div class="form-group description">
+                <label for="description">Descripción</label>
+                <textarea name="description" id=description rows="5" cols="75">Una breve descripción</textarea>
+            </div>
+            <div class="form-group" id="country_region">
+                <label>País</label>
+                <select id=country> 
+                </select>
+            </div>
+            <div class="form-group" id="cities">
+                <label>Ciudad de residencia</label>
+                <select id=city> 
+                </select>
+            </div>
+            <div class="form-group" id="pay-now">
+                <! –– final de los campos a rellenar y botón para enviar el formulario ––>
+                <button type="submit" class="btn btn-default" id="regButton">Registrarse</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+    
+</body>
+</html>
