@@ -1,4 +1,4 @@
-<! –– empieza la hoja de estilos con estilos generales ––>
+<! –– inicio de los campos a rellenar ––>
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body{
     color: #333;
     background-color: lightgray;
 }
-<! –– estilos generales del formulario ––>
 .regForm {
     max-width: 800px;
     background-color: #fff;
@@ -22,7 +21,7 @@ body{
     width: 100%;
     margin-bottom: 10px;
 }
-<! –– estilos de la cabecera del formulario ––>
+
 .regForm .heading h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -48,7 +47,6 @@ float: right;
     margin-top: 20px;
     position: relative;
 }
-<! –– estilos de los campos del formulario ––>
 .regForm .user .form-group {
     float: left;
     margin-bottom: 15px;
@@ -113,7 +111,13 @@ float: right;
           box-shadow: inset 0px 0px 5px #c1c1c1;
     outline: none;
 }
-<! –– estilos que cambian para hacer la página responsive según la resolución ––>
+.regForm .user select {
+    padding: 10px;
+    margin-right: 15px;
+}
+.transparent {
+    opacity: 0.2;
+}
 @media(max-width: 650px) {
     .regForm .name {
         width: 100%;
